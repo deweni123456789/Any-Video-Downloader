@@ -98,7 +98,7 @@ def download_video(url, output_path, choice):
         return ydl.prepare_filename(info_dict)
 
 def main():
-    application = ApplicationBuilder().token("YOUR_BOT_TOKEN").build() #add your bot token here...
+    application = ApplicationBuilder().token("8464050626:AAFjoldNU_A5jHEzSspCDDNUy5__WyEFfms").build() #add your bot token here...
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CommandHandler("stats", stats))
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
